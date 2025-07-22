@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teste de Estilo Jardim Onoda</title>
+  <style>
+    body {
+      background-color: #fff8f5;
+      font-family: 'Segoe UI', sans-serif;
+      color: #4a3b3a;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #b0607a;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h2 {
+      color: #b0607a;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+    button {
+      margin-top: 2rem;
+      background-color: #b0607a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    #resultado {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-left: 4px solid #b0607a;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Teste de Estilo Jardim Onoda</h1>
+  <p>Responda às perguntas e descubra qual estilo pessoal mais representa você, inspirado nos 7 estilos de Alyce Parsons.</p>
+
+  <form id="formEstilo">
+
+    <h2>1. O que é mais importante para você ao se vestir?</h2>
+    <label><input type="radio" name="q1" value="b">Estar elegante e refinada</label>
+    <label><input type="radio" name="q1" value="a">Estar confortável e prática</label>
+    <label><input type="radio" name="q1" value="d">Estar delicada e feminina</label>
+    <label><input type="radio" name="q1" value="g">Estar diferente e criativa</label>
+    <label><input type="radio" name="q1" value="e">Estar poderosa e marcante</label>
+    <label><input type="radio" name="q1" value="c">Estar bem-arrumada e discreta</label>
+    <label><input type="radio" name="q1" value="f">Estar sensual e confiante</label>
+
+    <h2>2. Qual dessas roupas você usaria com mais prazer?</h2>
+    <label><input type="radio" name="q2" value="b">Vestido midi de corte reto e salto fino</label>
+    <label><input type="radio" name="q2" value="a">Calça jeans, camiseta e tênis</label>
+    <label><input type="radio" name="q2" value="d">Vestido floral com renda ou babado</label>
+    <label><input type="radio" name="q2" value="g">Um mix ousado de estampas ou vintage</label>
+    <label><input type="radio" name="q2" value="e">Look preto com cortes marcantes e atitude</label>
+    <label><input type="radio" name="q2" value="c">Blazer com calça de alfaiataria neutra</label>
+    <label><input type="radio" name="q2" value="f">Um vestido justo, com decote ou fenda</label>
+
+    <h2>3. O que você mais busca ao se vestir?</h2>
+    <label><input type="radio" name="q3" value="a">Facilidade e conforto</label>
+    <label><input type="radio" name="q3" value="b">Transmissão de poder e refinamento</label>
+    <label><input type="radio" name="q3" value="c">Formalidade e discrição</label>
+    <label><input type="radio" name="q3" value="d">Leveza e delicadeza</label>
+    <label><input type="radio" name="q3" value="e">Impacto visual</label>
+    <label><input type="radio" name="q3" value="f">Valorização do corpo</label>
+    <label><input type="radio" name="q3" value="g">Expressão pessoal</label>
+
+    <h2>4. Qual dessas frases mais combina com você?</h2>
+    <label><input type="radio" name="q4" value="a">Moda tem que ser funcional</label>
+    <label><input type="radio" name="q4" value="b">Menos é mais, desde que tenha excelência</label>
+    <label><input type="radio" name="q4" value="c">Prefiro estar adequada a arriscar</label>
+    <label><input type="radio" name="q4" value="d">Adoro um toque feminino nos detalhes</label>
+    <label><input type="radio" name="q4" value="e">Quero causar impacto com o visual</label>
+    <label><input type="radio" name="q4" value="f">Gosto de destacar meus pontos fortes</label>
+    <label><input type="radio" name="q4" value="g">Amo quando meu look é único</label>
+
+    <h2>5. Em uma loja, você se sente mais atraída por:</h2>
+    <label><input type="radio" name="q5" value="a">Peças básicas, confortáveis e versáteis</label>
+    <label><input type="radio" name="q5" value="b">Itens de alfaiataria com bom caimento</label>
+    <label><input type="radio" name="q5" value="c">Cores neutras e cortes clássicos</label>
+    <label><input type="radio" name="q5" value="d">Estampas florais e tecidos fluidos</label>
+    <label><input type="radio" name="q5" value="e">Modelagens ousadas e peças statement</label>
+    <label><input type="radio" name="q5" value="f">Roupas que valorizem o corpo</label>
+    <label><input type="radio" name="q5" value="g">Peças com design artesanal ou autoral</label>
+
+    <h2>6. Seu look ideal para um evento formal seria:</h2>
+    <label><input type="radio" name="q6" value="a">Macacão elegante e confortável</label>
+    <label><input type="radio" name="q6" value="b">Vestido midi sofisticado</label>
+    <label><input type="radio" name="q6" value="c">Conjunto clássico e discreto</label>
+    <label><input type="radio" name="q6" value="d">Vestido romântico com renda</label>
+    <label><input type="radio" name="q6" value="e">Peça preta com corte ousado</label>
+    <label><input type="radio" name="q6" value="f">Vestido justo e marcante</label>
+    <label><input type="radio" name="q6" value="g">Look criativo e inesperado</label>
+
+    <h2>7. Qual dessas palavras mais te define?</h2>
+    <label><input type="radio" name="q7" value="a">Prática</label>
+    <label><input type="radio" name="q7" value="b">Sofisticada</label>
+    <label><input type="radio" name="q7" value="c">Reservada</label>
+    <label><input type="radio" name="q7" value="d">Delicada</label>
+    <label><input type="radio" name="q7" value="e">Forte</label>
+    <label><input type="radio" name="q7" value="f">Sensual</label>
+    <label><input type="radio" name="q7" value="g">Autêntica</label>
+
+    <h2>8. O que você mais gosta de ouvir quando alguém comenta sobre seu estilo?</h2>
+    <label><input type="radio" name="q8" value="a">Você parece tão confortável e natural!</label>
+    <label><input type="radio" name="q8" value="b">Você está sempre elegante!</label>
+    <label><input type="radio" name="q8" value="c">Você é tão discreta e chique!</label>
+    <label><input type="radio" name="q8" value="d">Você parece saída de um conto de fadas!</label>
+    <label><input type="radio" name="q8" value="e">Você é tão estilosa e ousada!</label>
+    <label><input type="radio" name="q8" value="f">Você arrasa e sabe se valorizar!</label>
+    <label><input type="radio" name="q8" value="g">Nunca vi ninguém se vestir como você!</label>
+
+    <button type="submit">Ver meu resultado</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    document.getElementById('formEstilo').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const contagem = { a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0 };
+      for (const [_, valor] of formData.entries()) {
+        contagem[valor]++;
+      }
+      const estiloMaisForte = Object.entries(contagem).sort((a, b) => b[1] - a[1])[0][0];
+      const mapaEstilos = {
+        a: 'Natural / Esportivo',
+        b: 'Elegante / Refinado',
+        c: 'Clássico / Tradicional',
+        d: 'Romântico / Delicado',
+        e: 'Dramático / Moderno',
+        f: 'Sensual / Magnético',
+        g: 'Criativo / Artístico'
+      };
+      document.getElementById('resultado').innerHTML =
+        '<h2>Seu estilo predominante é:</h2><p><strong>' + mapaEstilos[estiloMaisForte] + '</strong></p>';
+    });
+  </script>
+</body>
+</html>
